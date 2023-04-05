@@ -5,7 +5,7 @@ on:
 
 jobs:
   e2e-tests:
-    runs-on: ubuntu-latest # or macos-latest, windows-latest
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -14,5 +14,10 @@ jobs:
 
       - uses: microsoft/playwright-github-action@v1
 
-      - name: Install dependencies and run tests
-        run: npm install && npx playwright test
+      - name: Install dependencies
+        run: npm install
+        
+      - name: run tests
+        run: npx playwright test
+        
+        
