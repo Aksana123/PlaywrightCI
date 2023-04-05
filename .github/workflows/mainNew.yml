@@ -22,8 +22,3 @@ jobs:
         
       - name: run tests
         run: npx playwright test
-<<<<<<< HEAD
-=======
-        
-        
->>>>>>> cb4cd31b82364988c0e73ccaf26345fb1c959db2
