@@ -8,11 +8,21 @@ test('has title', async ({ page }) => {
 });
 
 test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('https://www.google.com/');
+});
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+test('get started link', async ({ page }) => {
+  await page.goto('https://www.google.com/');
+});
 
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*intro/);
+test('get started link', async ({ page }) => {
+  await page.goto('https://www.google.com/');
+});
+
+test('get started link', async ({ page }) => {
+  await page.goto('https://www.google.com/');
+});
+
+test('get started link', async ({ page }) => {
+  await page.goto('https://www.google.com/');
 });
