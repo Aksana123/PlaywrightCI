@@ -11,18 +11,11 @@ test('get started link', async ({ page }) => {
   await page.goto('https://www.google.com/');
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://www.google.com/');
+test('get started udmy', async ({ page }) => {
+  await page.goto('https://www.udemy.com/');
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://www.google.com/');
+test('get Youtube', async ({ page }) => {
+  await page.goto('https://www.youtube.com/');
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://www.google.com/');
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://www.google.com/');
-});
