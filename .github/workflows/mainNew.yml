@@ -5,17 +5,20 @@ on:
 
 jobs:
   e2e-tests:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v1
-
-      - uses: microsoft/playwright-github-action@v1
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+        
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
         
       - name: run tests
         run: npx playwright test
